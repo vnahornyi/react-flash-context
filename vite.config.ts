@@ -7,7 +7,7 @@ export default defineConfig({
   build: {
     lib: {
       entry: path.resolve(__dirname, 'src/index.ts'),
-      name: '@vnahornyi/use-context-selector',
+      name: 'react-flash-context',
       fileName: (format) => `index.${format}.js`
     },
     rollupOptions: {

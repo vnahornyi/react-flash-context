@@ -1,4 +1,4 @@
-# @vnahornyi/use-context-selector
+# react-flash-context
 
 A lightweight React hook for optimizing context consumption by preventing unnecessary rerenders. Built purely with React, it enhances performance by selectively subscribing to context values.
 
@@ -11,7 +11,7 @@ A lightweight React hook for optimizing context consumption by preventing unnece
 ## Installation
 
 ```sh
-npm install @vnahornyi/use-context-selector
+npm install react-flash-context
 ```
 
 ## Usage
@@ -21,7 +21,7 @@ npm install @vnahornyi/use-context-selector
 First, create a context using the `createContext` function:
 
 ```tsx
-import { createContext } from "@vnahornyi/use-context-selector";
+import { createContext } from "react-flash-context";
 
 type ContextType = {
   value: number;
@@ -134,7 +134,7 @@ Use the `useContextSelector` hook to selectively consume context values:
 
 ```tsx
 import React from "react";
-import { useContextSelector } from "@vnahornyi/use-context-selector";
+import { useContextSelector } from "react-flash-context";
 import { context } from "./path-to-your-context-file";
 
 const YourComponent = () => {

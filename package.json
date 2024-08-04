@@ -1,9 +1,18 @@
 {
-  "name": "@vnahornyi/use-context-selector",
+  "name": "react-flash-context",
   "private": false,
   "version": "0.0.1",
   "type": "module",
   "license": "ISC",
+  "author": "Vladyslav Nahornyi",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vnahornyi/react-flash-context.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vnahornyi/react-flash-context/issues"
+  },
+  "homepage": "https://github.com/vnahornyi/react-flash-context",
   "scripts": {
     "dev": "vite",
     "build": "tsc & vite build",

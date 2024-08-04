@@ -42,8 +42,8 @@ type ContextType = {
 };
 
 export class CountProvider extends React.Component<
-  ContextType,
-  { children: React.ReactNode }
+  { children: React.ReactNode },
+  ContextType
 > {
   constructor(props) {
     super(props);
@@ -70,7 +70,7 @@ export class CountProvider extends React.Component<
   };
 
   render() {
-    return <Provider value={this.state}>{children}</Provider>;
+    return <Provider value={this.state}>{this.props.children}</Provider>;
   }
 }
 ```
@@ -173,11 +173,8 @@ Returns the selected value from the context.
 
 ### Dependencies
 
-- **React**: ^18.3.1
-- **ReactDOM**: ^18.3.1
-- **Vite**: ^5.3.5
-- **Vitest**: ^2.0.5
-- **TypeScript**: ^5.2.2
+- **React**: *
+- **ReactDOM**: *
 
 ## License
 

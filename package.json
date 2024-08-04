@@ -1,7 +1,7 @@
 {
   "name": "react-flash-context",
   "private": false,
-  "version": "0.0.1",
+  "version": "0.0.2",
   "type": "module",
   "license": "ISC",
   "author": "Vladyslav Nahornyi",
@@ -26,6 +26,7 @@
   ],
   "main": "./dist/index.umd.js",
   "module": "./dist/index.es.js",
+  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
       "import": "./dist/index.es.js",

@@ -181,4 +181,4 @@ Returns the selected value from the context.
 
 ## License
 
-MIT
+ISC

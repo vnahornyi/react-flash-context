@@ -3,6 +3,7 @@
   "private": false,
   "version": "0.0.1",
   "type": "module",
+  "license": "ISC",
   "scripts": {
     "dev": "vite",
     "build": "tsc & vite build",
@@ -22,6 +23,18 @@
       "require": "./dist/index.umd.js"
     }
   },
+  "keywords": [
+    "react",
+    "context",
+    "optimization",
+    "performance",
+    "hook",
+    "selector",
+    "rerender",
+    "react-context",
+    "react-hook",
+    "react-optimization"
+  ],
   "dependencies": {
     "react": "*",
     "react-dom": "*"

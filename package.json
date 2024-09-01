@@ -1,7 +1,7 @@
 {
   "name": "react-flash-context",
   "private": false,
-  "version": "0.0.4-react-19-rc",
+  "version": "0.0.4",
   "type": "module",
   "license": "ISC",
   "author": "Vladyslav Nahornyi",

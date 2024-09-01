@@ -6,7 +6,7 @@ A lightweight React hook for optimizing context consumption by preventing unnece
 
 - **Optimized Context Consumption**: Prevents unnecessary rerenders by selectively subscribing to context values.
 - **Lightweight**: Built purely with React, ensuring minimal overhead.
-- **Flexible**: Supports React 18 and can be easily integrated into any React project.
+- **Flexible**: Supports **React 19 RC** and can be easily integrated into any React project.
 
 ## Installation
 
@@ -173,8 +173,8 @@ Returns the selected value from the context.
 
 ### Dependencies
 
-- **React**: *
-- **ReactDOM**: *
+- **React**: ^19.0.0-rc
+- **ReactDOM**: ^19.0.0-rc
 
 ## License
 

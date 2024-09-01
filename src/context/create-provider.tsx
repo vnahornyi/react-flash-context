@@ -1,10 +1,10 @@
-import { useEffect, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import { ContextType, ListenerType, ProviderPropsType } from "./context-types";
 
 export function createProvider<T>(
   ProviderOriginal: React.Provider<ContextType<T>>
 ) {
-  return ({ value, children }: ProviderPropsType<T>) => {
+  return function Provider({ value, children }: ProviderPropsType<T>) {
     const valueRef = useRef(value);
 
     const listenersRef = useRef(new Set<ListenerType<T>>());

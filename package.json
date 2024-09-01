@@ -1,7 +1,7 @@
 {
   "name": "react-flash-context",
   "private": false,
-  "version": "0.0.3",
+  "version": "0.0.5",
   "type": "module",
   "license": "ISC",
   "author": "Vladyslav Nahornyi",
@@ -16,9 +16,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc & vite build",
-    "test": "vitest run",
-    "watch": "vitest",
-    "coverage": "vitest run --coverage"
+    "watch": "vitest"
   },
   "files": [
     "dist",
@@ -30,7 +28,8 @@
   "exports": {
     ".": {
       "import": "./dist/index.es.js",
-      "require": "./dist/index.umd.js"
+      "require": "./dist/index.umd.js",
+      "types": "./dist/index.d.ts"
     }
   },
   "keywords": [
@@ -46,17 +45,14 @@
     "react-optimization"
   ],
   "dependencies": {
-    "react": "*",
-    "react-dom": "*"
+    "react": "^19.0.0-rc-e56f4ae3-20240830",
+    "react-dom": "^19.0.0-rc-e56f4ae3-20240830"
   },
   "devDependencies": {
     "@eslint/js": "^9.8.0",
-    "@testing-library/dom": "^10.4.0",
-    "@testing-library/react": "^16.0.0",
     "@types/node": "^22.1.0",
-    "@types/react": "^18.2.55",
-    "@types/react-dom": "^18.2.19",
-    "@types/react-test-renderer": "^18.3.0",
+    "@types/react": "npm:types-react@rc",
+    "@types/react-dom": "npm:types-react-dom@rc",
     "@vitejs/plugin-react": "^4.3.1",
     "@vitest/coverage-v8": "^2.0.5",
     "eslint": "^9.8.0",
@@ -94,5 +90,9 @@
     "parserOptions": {
       "sourceType": "module"
     }
+  },
+  "overrides": {
+    "@types/react": "npm:types-react@rc",
+    "@types/react-dom": "npm:types-react-dom@rc"
   }
 }
